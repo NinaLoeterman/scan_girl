@@ -7,18 +7,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route path="/suicide">
-            <Player
-              video={
-                "https://www.youtube.com/watch?v=A-yMz35wIxU&feature=youtu.be"
-              }
-            />
-          </Route>
-        </Switch>
+          <Route path="/suicide" component={Player} />
       </Router>
     </div>
   );
 }
+
+const Player = () => (
+  <Player
+    video={"https://www.youtube.com/watch?v=A-yMz35wIxU&feature=youtu.be"}
+  />
+);
 
 export default App;
