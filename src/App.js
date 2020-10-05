@@ -7,13 +7,13 @@ function App() {
   return (
     <div className="App">
       <Router>
-          <Route path="/suicide" component={Player} />
+          <Route path="/suicide" component={Play} />
       </Router>
     </div>
   );
 }
 
-const Player = () => (
+const Play = () => (
   <Player
     video={"https://www.youtube.com/watch?v=A-yMz35wIxU&feature=youtu.be"}
   />
