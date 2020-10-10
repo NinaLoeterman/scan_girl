@@ -8,15 +8,8 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          <Link to="/suicide">suicide</Link>
-          <Link to="/coming-back">coming-back</Link>
           <Switch>
-            <Route path="/suicide">
-              <Player video={"https://youtu.be/A-yMz35wIxU"} />
-            </Route>
-            <Route path="/coming-back">
-              <Player video={"https://youtu.be/EdKkofuIOR0"} />
-            </Route>
+            <Route path="/:slug" component={Player}/>
           </Switch>
         </div>
       </Router>
