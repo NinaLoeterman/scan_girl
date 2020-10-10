@@ -8,11 +8,11 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          <Link to="/suicide"></Link>
-          <Link to="/coming-back"></Link>
+          <Link to="/suicide">suicide</Link>
+          <Link to="/coming-back">coming-back</Link>
           <Switch>
-            <Route path="/suicide" component={Play} />
-            <Route path="/coming-back" component={Play}></Route>
+            <Route path="/suicide" component={Play('https://youtu.be/A-yMz35wIxU')} />
+            <Route path="/coming-back" component={Play('https://youtu.be/EdKkofuIOR0')} />
           </Switch>
         </div>
       </Router>
@@ -20,9 +20,9 @@ function App() {
   );
 }
 
-const Play = () => (
+const Play = (url) => (
   <Player
-    video={"https://www.youtube.com/watch?v=A-yMz35wIxU&feature=youtu.be"}
+    video={url}
   />
 );
 
