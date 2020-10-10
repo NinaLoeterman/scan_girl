@@ -11,19 +11,17 @@ function App() {
           <Link to="/suicide">suicide</Link>
           <Link to="/coming-back">coming-back</Link>
           <Switch>
-            <Route path="/suicide" component={Play('https://youtu.be/A-yMz35wIxU')} />
-            <Route path="/coming-back" component={Play('https://youtu.be/EdKkofuIOR0')} />
+            <Route path="/suicide">
+              <Player video={"https://youtu.be/A-yMz35wIxU"} />
+            </Route>
+            <Route path="/coming-back">
+              <Player video={"https://youtu.be/EdKkofuIOR0"} />
+            </Route>
           </Switch>
         </div>
       </Router>
     </div>
   );
 }
-
-const Play = (url) => (
-  <Player
-    video={url}
-  />
-);
 
 export default App;
