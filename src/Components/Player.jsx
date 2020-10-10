@@ -3,11 +3,11 @@ import ReactPlayer from "react-player";
 import { useParams } from "react-router-dom";
 
 const Player = () => {
-  const [video, setVideo] = useState("suicide");
+  const [video, setVideo] = useState(null);
   let { slug } = useParams();
   
   useEffect(() => {
-    if ({slug} === "suicide") {
+    if (slug === "suicide") {
       console.log(slug)
       setVideo('https://youtu.be/A-yMz35wIxU')
     } else {
