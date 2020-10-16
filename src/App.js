@@ -8,12 +8,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div>
           <Switch>
-            <Route path="/:slug" component={Player}/>
-            <Route path="/" component={HomePage}/>
+            <Route exact path="/" component={HomePage}/>
+            <Route path="/video/:slug" component={Player}/>
           </Switch>
-        </div>
       </Router>
     </div>
   );
