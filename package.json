@@ -11,7 +11,8 @@
     "react-player": "^2.6.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "yarn.lock": "^0.0.1-security"
   },
   "scripts": {
     "dev": "react-scripts start",
