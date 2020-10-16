@@ -7,8 +7,8 @@ const Player = () => {
   let { slug } = useParams();
   
   useEffect(() => {
+    console.log(slug)
     if (slug === "suicide") {
-      console.log(slug)
       setVideo('https://youtu.be/A-yMz35wIxU')
     } else {
       setVideo('https://youtu.be/EdKkofuIOR0')
