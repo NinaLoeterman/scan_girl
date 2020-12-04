@@ -1,1 +1,2 @@
-/video/*    /video/:slug    200
+/
+/video/:slug
