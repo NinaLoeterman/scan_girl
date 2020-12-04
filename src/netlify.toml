@@ -1,4 +1,9 @@
 [[redirects]]
 from = "/*"
-to = "/video/:slug"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from ="/video/*"
+to = "/video/:splat"
 status = 200
