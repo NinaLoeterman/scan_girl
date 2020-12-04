@@ -1,2 +1,2 @@
 /* /index.html 200
-/suicide /video/suicide 200
+/video/* /video/:splat 200
